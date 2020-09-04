@@ -1,4 +1,11 @@
-[toc]
+---
+layout: post
+title: 云服务端性能测试
+categories: [测试]
+description: 云服务端性能测试
+keywords: 性能测试
+topmost: false
+---
 
 # 云服务端性能测试报告分析
 
@@ -54,6 +61,6 @@
 
 ## 云服务性能测试问题案例分析
 
-![](/images/posts/cloud-server-test/image-20200820195739609.png)
+![image-20200820195739609](Image/image-20200820195739609.png)
 
-![](/images/posts/cloud-server-test/image-20200820200337424.png)
+![image-20200820200337424](Image/image-20200820200337424.png)
