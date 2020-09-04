@@ -64,3 +64,5 @@ topmost: false
 ![image-20200820195739609](Image/image-20200820195739609.png)
 
 ![image-20200820200337424](Image/image-20200820200337424.png)
+
+![](/images/blog/learn-more-study-less-s.s.png)
