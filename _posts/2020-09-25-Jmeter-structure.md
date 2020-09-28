@@ -17,3 +17,9 @@ topmost: false
 
 ![Jmeter结构.png](https://i.loli.net/2020/09/25/AVNgQdGBas2tkJI.png)
 
+### 取样器
+
+> 模拟用户操作向服务器发送请求，接收响应数据
+>
+> 
+
