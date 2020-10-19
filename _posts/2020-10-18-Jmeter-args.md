@@ -19,10 +19,8 @@ keywords: Jmeter
    ![Pw7dWemV6DXULR3](https://i.loli.net/2020/10/18/Pw7dWemV6DXULR3.png)
 
    ![wNnEzm5lrdYktIZ](https://i.loli.net/2020/10/18/wNnEzm5lrdYktIZ.png)
-
-   * 
-
-1. json 提取器
+ 
+2. json 提取器
 
    ![IPYaFGH9kot7Nx1](https://i.loli.net/2020/10/18/IPYaFGH9kot7Nx1.png)
 
@@ -44,8 +42,7 @@ keywords: Jmeter
 >
 > jmx file脚本文件的绝对路径 result file输出文件，以.jtl结尾 最后的是测试报告的绝对路径
 
-- -n是指非GUI模式执行Jmeter
-
+* -n是指非GUI模式执行Jmeter
 * -t是指脚本文件的路径
 * -l生成结果的保存文件
 * -e测试结束后生成测试报告
