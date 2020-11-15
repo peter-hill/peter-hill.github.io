@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Jmeter传参
+title: Jmeter实战学习
 categories: [Jmeter]
 description: Jmeter传参
 keywords: Jmeter
@@ -58,4 +58,101 @@ keywords: Jmeter
 ## 接口测试测试用例
 
 ![caRjTMzBkvuowYA](https://i.loli.net/2020/10/18/caRjTMzBkvuowYA.png)
+
+## 访问地址参数化
+
+> 为了应对写脚本时的地址与执行时的服务器地址参数不一致，将地址参数化后，如果地址有变动时直接改参数就好了
+
+![截屏2020-11-10 上午11.03.39](https://i.loli.net/2020/11/10/SjRs64E8QXyB5Zt.png)
+
+## HTTP请求默认值
+
+> 一个项目的地址是不变的，每个请求都写一遍，会加大工作量，HTTP请求默认值就可以将重复的内容分离出来
+
+![ArlRTohb6FOzJiw](https://i.loli.net/2020/11/11/ArlRTohb6FOzJiw.png)
+
+## 断言
+
+> 通过匹配响应字段来验证服务器是否成功响应
+
+![zEMnm74ivgkCxoQ](https://i.loli.net/2020/11/11/zEMnm74ivgkCxoQ.png)
+
+- 图中的忽略状态勾选了表示如果第一个响应失败，第二次成功还是可以判定为该次事物成功的
+
+- **模式匹配规则**
+
+  ![XhPeU9CTcMpNJj4](https://i.loli.net/2020/11/11/XhPeU9CTcMpNJj4.png)
+
+  ## Jmeter事务
+
+  > 性能测试关注的是TPS，事务控制器就可以将多个请求统计成一个事务
+
+  ### 事务控制器
+
+  ![c3I82owPEROfQy4](https://i.loli.net/2020/11/15/c3I82owPEROfQy4.png)
+
+  - Generate parent sample:勾选后事务控制器作为子采样器的父采样器，否则作为额外采样器加在子采样器后面
+  - include duration of timer and per-most processors in generated sample:是否包含定时器、预处理和后期处理延迟的时间
+
+  ## Jmeter集合点
+
+  > 用于性能测试时模拟大量用户在同一时间发送请求，Jmeter的集合点是通过定时器完成的
+
+  ### 同步定时器
+
+  <img src="https://i.loli.net/2020/11/15/Yg5LmG3Zjr4wSCy.png" alt="image-20201115180951246"/>
+
+  * 参数1为要同步的数量
+
+  - 参数2为超时时间，若在这个时间内没有加载到对应的并发数，就发送请求
+  - 超时时间设置：超时时间 > 请求集合数量 * 1000 / (线程数 / 线程加载时间)
+
+## Jmeter元件运行顺序
+
+> 类似于二叉树的中序遍历
+
+### Jmeter执行顺序逻辑
+
+1. 配置元件
+2. 前置处理器
+3. 定时器
+4. 取样器
+5. 后置处理器
+6. 断言
+7. 监听器
+
+![1739Y6gco852ENX](https://i.loli.net/2020/11/15/1739Y6gco852ENX.png)
+
+### 上图中的执行顺序如下
+
+1. 线程组
+2. 简单控制器
+3. HTTP cookie管理器
+4. 执行前置处理器用户参数
+5. 执行定时器
+6. 执行取样器1
+7. 执行后置处理器
+8. 执行断言
+9. HTTP cookie管理器
+10. 执行前置处理器用户参数
+11. 执行定时器
+12. 执行取样器2
+13. 执行后置处理器
+14. 执行断言
+15. 执行取样器3
+16. 执行查看结果树
+
+## 场景设计
+
+> 用于模拟用户真实操作的工作单元，Jmeter主要通过线程组来完成
+
+## 场景设置
+
+> 通过线程组创建线程池
+
+![EB6YPkTOel9cJzw](https://i.loli.net/2020/11/16/EB6YPkTOel9cJzw.png)
+
+
+
+
 
