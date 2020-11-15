@@ -2,7 +2,7 @@
 layout: post
 title: Jmeter实战学习
 categories: [Jmeter]
-description: Jmeter传参
+description: Jmeter实战学习
 keywords: Jmeter
 ---
 
