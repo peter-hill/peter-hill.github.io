@@ -10,6 +10,8 @@ keywords: Jmeter
 
 ![image-20201018144724517](https://i.loli.net/2020/10/18/sPNQSdEiWyzFO42.png)
 
+![ApPEQ6x49tXYlTG](https://i.loli.net/2020/11/16/ApPEQ6x49tXYlTG.png)
+
 ## Jmeter参数化
 
 ### 接口间参数传递
