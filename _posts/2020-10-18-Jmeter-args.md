@@ -41,6 +41,7 @@ keywords: Jmeter
 > jmeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]
 >
 > jmx file脚本文件的绝对路径 result file输出文件，以.jtl结尾 最后的是测试报告的绝对路径
+> jmeter -g [result] -o [Path to web report folder]
 
 * -n是指非GUI模式执行Jmeter
 * -t是指脚本文件的路径
