@@ -1,12 +1,12 @@
 ---
 layout: post
-title: Jmeter实战学习
+title: Jmeter实战
 categories: [Jmeter]
-description: Jmeter实战学习
+description: Jmeter实战
 keywords: Jmeter
 ---
 
-# Jmeter学习
+# Jmeter实战三四五章学习记录
 
 ![image-20201018144724517](https://i.loli.net/2020/10/18/sPNQSdEiWyzFO42.png)
 
@@ -43,6 +43,7 @@ keywords: Jmeter
 > jmeter -n -t [jmx file] -l [results file] -e -o [Path to web report folder]
 >
 > jmx file脚本文件的绝对路径 result file输出文件，以.jtl结尾 最后的是测试报告的绝对路径
+>
 > jmeter -g [result] -o [Path to web report folder]
 
 * -n是指非GUI模式执行Jmeter
