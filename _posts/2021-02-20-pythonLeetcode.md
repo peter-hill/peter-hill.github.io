@@ -1,3 +1,11 @@
+---
+layout: post
+title: Leetcode刷题计划
+categories: [leetcode]
+description: 数据结构和算法加强
+keywords: python
+---
+
 ## 刷题计划
 
 ### DataStructure
