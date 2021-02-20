@@ -111,13 +111,13 @@ collections:
 # ---------------- #
 #      Comments    #
 # ---------------- #
-# support provider: disqus, gitment, gitalk
+support provider: disqus, gitment, gitalk
 comments_provider: gitalk
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
-    username: 
+    username: peter-hill
 # https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: peter-hill
@@ -131,6 +131,7 @@ gitalk:
     repo: blog-comments
     clientID: c895a409dd7f4070d68f
     clientSecret: 5c9a1cb23e84542320b90af24acbcdcfec8f1979
+    proxy: https://netnr-proxy.cloudno.de/https://github.com/login/oauth/access_token
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 
@@ -153,3 +154,5 @@ google:
         sidebar: true 
         content_header: true
         content_footer: false
+
+# github: [metadata]
