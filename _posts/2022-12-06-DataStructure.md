@@ -202,7 +202,7 @@ int main() {
 
 #### 动态分配
 
-```C++
+```c++
 // 动态分配
 #define InitSize 10
 
