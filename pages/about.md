@@ -10,8 +10,6 @@ permalink: /about/
 
 好好学习，天天向上
 
-![](/images/about/our.jpg)
-
 ## 联系
 
 <ul>
